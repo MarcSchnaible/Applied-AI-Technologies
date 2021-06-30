@@ -1,0 +1,8 @@
+{
+  "name": "PocketTrainerApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

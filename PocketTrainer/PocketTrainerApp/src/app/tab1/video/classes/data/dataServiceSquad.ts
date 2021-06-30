@@ -1,0 +1,20 @@
+import { Injectable } from "@angular/core";
+
+@Injectable({
+    providedIn: 'root'
+})
+export class DataServiceSquad {
+    private pose1 = {"score":0.9838837139746722,"keypoints":[{"score":0.9840143322944641,"part":"nose","position":{"x":171.6627223633504,"y":220.97238105349498}},{"score":0.9959695339202881,"part":"leftEye","position":{"x":178.19115527966204,"y":213.01245204143964}},{"score":0.9943420886993408,"part":"rightEye","position":{"x":165.10684632039272,"y":214.06841038945896}},{"score":0.9621886610984802,"part":"leftEar","position":{"x":189.4129626136326,"y":215.9288243949818}},{"score":0.9341188073158264,"part":"rightEar","position":{"x":157.91465607986234,"y":218.1325734111315}},{"score":0.9993078708648682,"part":"leftShoulder","position":{"x":208.40206632533088,"y":263.89424404522134}},{"score":0.998988926410675,"part":"rightShoulder","position":{"x":146.32858297980204,"y":267.50824736513636}},{"score":0.9989013671875,"part":"leftElbow","position":{"x":217.15553218852358,"y":324.60078287318737}},{"score":0.9993529915809631,"part":"rightElbow","position":{"x":140.6151444648548,"y":325.35972713227187}},{"score":0.9945656061172485,"part":"leftWrist","position":{"x":228.91444997814492,"y":378.35863297150615}},{"score":0.9961414933204651,"part":"rightWrist","position":{"x":127.18121525923861,"y":383.744747498304}},{"score":0.988324761390686,"part":"leftHip","position":{"x":193.82581089441229,"y":366.8414806019176}},{"score":0.9938955903053284,"part":"rightHip","position":{"x":153.90361537338993,"y":366.3404180767417}},{"score":0.9995765089988708,"part":"leftKnee","position":{"x":213.85587308629715,"y":457.8884336142883}},{"score":0.9991838335990906,"part":"rightKnee","position":{"x":135.36130942974145,"y":458.7123664017449}},{"score":0.9842950105667114,"part":"leftAnkle","position":{"x":233.686231013398,"y":551.5655925031272}},{"score":0.9028557538986206,"part":"rightAnkle","position":{"x":112.40915401123739,"y":550.7032235506593}}]}
+    private pose2 = {"score":0.9806921727517072,"keypoints":[{"score":0.9998675584793091,"part":"nose","position":{"x":178.18943704491633,"y":342.374987577648}},{"score":0.9998146295547485,"part":"leftEye","position":{"x":185.625227585055,"y":333.5679248411264}},{"score":0.9997836947441101,"part":"rightEye","position":{"x":169.78409202510844,"y":335.4768778621099}},{"score":0.9870949983596802,"part":"leftEar","position":{"x":197.72213511696617,"y":338.2912664736951}},{"score":0.9675955176353455,"part":"rightEar","position":{"x":161.12709045410156,"y":338.24904173976535}},{"score":0.9957745671272278,"part":"leftShoulder","position":{"x":218.70687122723197,"y":382.7835722344863}},{"score":0.9900829195976257,"part":"rightShoulder","position":{"x":151.5097577578623,"y":378.02580967234144}},{"score":0.9644775390625,"part":"leftElbow","position":{"x":210.0070272559147,"y":440.5261549309119}},{"score":0.9707674384117126,"part":"rightElbow","position":{"x":146.67931359482893,"y":436.47474999602485}},{"score":0.9446945786476135,"part":"leftWrist","position":{"x":184.5821942553642,"y":408.6815493621205}},{"score":0.9503129124641418,"part":"rightWrist","position":{"x":167.88763094893935,"y":410.6128776063751}},{"score":0.9720026254653931,"part":"leftHip","position":{"x":201.2955933049448,"y":441.5867275615884}},{"score":0.9670214056968689,"part":"rightHip","position":{"x":159.5873413950458,"y":445.0895347646975}},{"score":0.995845377445221,"part":"leftKnee","position":{"x":244.406265172337,"y":455.249634700035}},{"score":0.9966607093811035,"part":"rightKnee","position":{"x":117.1353856159675,"y":456.6805156568012}},{"score":0.9809579849243164,"part":"leftAnkle","position":{"x":245.5224045275291,"y":546.594006562977}},{"score":0.9890124797821045,"part":"rightAnkle","position":{"x":115.32927775180373,"y":543.3603820386703}}]}
+    private poses = [];
+
+    initDataServiceSquad(){
+        this.poses.push(this.pose1);
+        this.poses.push(this.pose2);
+        this.poses.push(this.pose1);
+    }
+
+    getPose(number: number) {
+        return this.poses[number-1];
+    }
+} 

@@ -1,0 +1,177 @@
+ion-content {
+    /*
+    --background: url("../../assets/backgrounds/BackgroundMan.jpg") no-repeat center center / cover;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%
+    */
+}
+
+.splash {
+    background: url("../../assets/backgrounds/BackgroundMan.jpg") no-repeat center/ cover fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchIcon {
+    font-size: x-large;
+    color: white;
+}
+
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.helloUserTitle {
+    margin-top: 4rem;
+    color: white;
+    font-size: xx-large;
+}
+
+.videoHeadlinesFirst {
+    margin-top: 3rem;
+    color: white;
+}
+.videoHeadlines {
+    margin-top: 1rem;
+    color: white;
+}
+
+.video-container {
+    display: flex;
+}
+
+.video-item-container {
+    text-align: center;
+    margin-right: 1.25rem;
+}
+
+.videoPicture {
+    display: inline-block;
+    width: 11rem;
+    height: 6rem;
+    border: solid 1px rgba($color: #000000, $alpha: 0);
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px black;
+    background-image: url(../../assets/videoImages/video4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.videoPicture2 {
+    display: inline-block;
+    width: 11rem;
+    height: 6rem;
+    border: solid 1px rgba($color: #000000, $alpha: 0);
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px black;
+    background-image: url(../../assets/videoImages/video5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.videoPicture3 {
+    display: inline-block;
+    width: 11rem;
+    height: 6rem;
+    border: solid 1px rgba($color: #000000, $alpha: 0);
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px black;
+    background-image: url(../../assets/videoImages/video3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.videoPicture4 {
+    display: inline-block;
+    width: 11rem;
+    height: 6rem;
+    border: solid 1px rgba($color: #000000, $alpha: 0);
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px black;
+    background-image: url(../../assets/videoImages/video1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.description {
+    margin-top: 0.25rem;
+    color: white;
+    font-size: xx-small;
+}
+
+.playButton {
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #252525 !important;
+}
+
+/*
+
+.cameraPreview {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.blackBackground{
+    z-index: 11;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.image-overlay {
+    z-index: 12;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.canvas-overlay {
+    z-index: 14;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myVideo {
+    z-index: 13;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    z-index: 15;
+}
+
+#close::part(native) {
+    border-radius: 30px;
+}
+*/

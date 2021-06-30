@@ -1,0 +1,98 @@
+.cameraPreview {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.blackBackground{
+    z-index: 12;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.image-overlay {
+    z-index: 11;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.canvas-overlay {
+    z-index: 14;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dialog {
+    z-index: 15;
+    position: absolute;
+    top: 120px;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+
+#myVideo {
+    z-index: 13;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 70px;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+}
+
+.closeButton {
+    color: black;
+    width: 40px;
+    height: 40px;
+    flex: 1 0 60px;
+}
+
+.segment {
+    width: 2rem;
+    margin-left: 20%;
+    margin-right: 15%;
+    border-radius: 45px;
+    flex: 10000 0 auto;
+    color: black;
+}
+
+.segmentButton {
+    --border-radius: 45px;
+    --transition: none;
+    --indicator-color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.text {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+#close::part(native) {
+    border-radius: 30px;
+}
+*/

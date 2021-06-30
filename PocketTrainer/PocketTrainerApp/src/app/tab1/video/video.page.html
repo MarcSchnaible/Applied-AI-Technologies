@@ -1,0 +1,32 @@
+<ion-content>
+  <div id="cameraPreview" class="cameraPreview">
+    <div class="header">
+      <ion-segment class="segment" mode="ios" value="lernModus" (ionChange)="onModeUpdate($event.detail.value)">
+        <ion-segment-button class="segmentButton" value="lernModus">
+          <p class="text">lernen</p>
+        </ion-segment-button>
+        <ion-segment-button class="segmentButton"  value="trainModus">
+          <p class="text">trainieren</p>
+        </ion-segment-button>
+      </ion-segment>
+      <ion-icon (click)="stopCamera()" name="close-outline" class="closeButton"></ion-icon>
+      <!--
+        <ion-button [style]="cssProbertyCloseButton" (click)="stopCamera()" id="close">
+          <ion-icon name="close-outline"></ion-icon>
+        </ion-button>
+      -->
+    </div>
+  </div>
+
+  <img id="image" [style]="cssProberty" [src]="image" *ngIf="image && cameraActive" class="image-overlay" #imageView>
+  <canvas id="canvas" [style]="cssProberty" #canvas class="canvas-overlay" *ngIf="image && cameraActive"></canvas>
+
+  <video autoplay muted loop id="myVideo" *ngIf="cameraActive" webkit-playsinline playsinline>
+    <source src="{{videoSource}}" type="video/mp4">
+  </video>
+  <canvas id="canvasVideo"></canvas>
+
+  <div class="blackBackground" *ngIf="cameraActive"></div>
+  <h2 class="dialog" *ngIf="positionCorrect">Bitte nehme die Position deines Trainers ein</h2>
+  <h2 class="dialog" *ngIf="!positionCorrect">Bitte vergrößern Sie den Abstand zur Kamera</h2>
+</ion-content>
